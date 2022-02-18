@@ -1,0 +1,8 @@
+img {
+    border: double;
+    display: flex;
+    align-content: space-around;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    align-items: center;
+}
