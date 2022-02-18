@@ -1,7 +1,7 @@
-function GalleryItem() {
+function GalleryItem({image}) {
     return (
         <div>
-            
+            <p>{image.url}</p>
         </div>
     )
 }
