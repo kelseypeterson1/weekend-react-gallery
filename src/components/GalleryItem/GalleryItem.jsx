@@ -1,7 +1,7 @@
 function GalleryItem({image}) {
     return (
         <div>
-            <p>{image.url}</p>
+            <img src={image.url} alt={image.name}></img>
         </div>
     )
 }

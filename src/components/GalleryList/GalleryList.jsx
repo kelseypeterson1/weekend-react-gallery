@@ -1,5 +1,6 @@
 import GalleryItem from '../GalleryItem/GalleryItem'
 import React from 'react';
+import './GalleryList.css'
 
 function GalleryList({ gallery }) {
     return (
