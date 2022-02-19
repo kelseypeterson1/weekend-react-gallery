@@ -4,7 +4,7 @@ import './GalleryList.css'
 
 function GalleryList({ gallery }) {
     return (
-        <div ClassName={'container'}>
+        <div className={'container'}>
             {gallery.map(image =>
                 (<GalleryItem
                     key={image.id}

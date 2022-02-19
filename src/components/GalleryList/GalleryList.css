@@ -1,5 +1,8 @@
-.GalleryList {
+.container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: teal;
+    gap: 30px 30px;
 }
