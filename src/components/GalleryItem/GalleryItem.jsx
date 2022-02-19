@@ -26,6 +26,9 @@ function GalleryItem({image, addLike}) {
             <div className={'button'}>
                 <button onClick={handleLike}>like</button>
             </div>
+                {image.likes === 0 && <p>No likes yet...</p>}
+                {image.likes === 1 && <p>1 person likes this</p>}
+                {image.likes > 1 && <p>{image.likes} people like this!</p>}
         </div>
     )
 }

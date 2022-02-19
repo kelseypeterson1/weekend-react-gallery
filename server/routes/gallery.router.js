@@ -5,7 +5,6 @@ const pool = require('../modules/pool');
 // DO NOT MODIFY THIS FILE FOR BASE MODE
 
 // PUT Route
-
 router.put('/:id', (req, res) => {
     console.log('req.body in PUT request is', req.body);
 
