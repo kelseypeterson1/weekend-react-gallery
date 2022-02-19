@@ -19,6 +19,20 @@ function App() {
       })
   }
 
+
+  const addLike = (item) => {
+    console.log('addLike function made it back to app.jsx with id', item.id)
+    let newCount = item.likes + 1;
+    axios.put(`/gallery/${item.id}`, {likes: newCount})
+      .then(response => {
+        fetchGallery();
+      })
+      .catch(err => {
+        console.log('Error updating likes', err);
+      })
+  }
+
+
   useEffect(() => {
     fetchGallery();
   }, [])
@@ -28,8 +42,9 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">My Gallery</h1>
       </header>
-      <GalleryList 
-        gallery={gallery} 
+      <GalleryList
+        gallery={gallery}
+        addLike={addLike}
       />
     </div>
   );
