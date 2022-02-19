@@ -64,4 +64,20 @@ router.post('/', (req, res) => {
 }) // END POST Route
 
 
+// DELETE Route
+router.delete('/:id', (req, res) => {
+    let reqId = req.params.id;
+    console.log('Delete ID', reqId);
+    let queryText = 'DELETE FROM gallery WHERE id = $1;'
+    pool.query(queryText, [reqId])
+        .then((result) => {
+            console.log('Image deleted');
+            res.sendStatus(200);
+        })
+        .catch((error) => {
+            console.log('Error making database query', queryText, error);
+            res.sendStatus(500);
+        })
+}) // END DELETE Route
+
 module.exports = router;

@@ -20,6 +20,19 @@ function App() {
       })
   }
 
+  const deleteImage = (id) => {
+    console.log('Delete request made it back to app.jsx. Deleting:', id)
+    axios({
+        method: 'DELETE',
+        url: `/gallery/${id}`
+    })
+        .then((response) => {
+            console.log('DELETE response.data is', response.data)
+            fetchGallery();
+        }).catch((err) => {
+            console.log('DELETE error is', err)
+        })
+}
 
   const addLike = (item) => {
     console.log('addLike function made it back to app.jsx with id', item.id)
@@ -49,6 +62,7 @@ function App() {
       <GalleryList
         gallery={gallery}
         addLike={addLike}
+        deleteImage={deleteImage}
       />
     </div>
   );
