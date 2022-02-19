@@ -45,4 +45,23 @@ router.get('/', (req, res) => {
         });
 }); // END GET Route
 
+// POST Route
+router.post('/', (req, res) => {
+    const image = req.body;
+    const sqlText = `INSERT INTO gallery (name, url)
+                     VALUES ($1, $2)`;
+    // Let sql sanitize your inputs (NO Bobby Drop Tables here!)
+    // the $1, $2, etc get substituted with the values from the array below
+    pool.query(sqlText, [image.name, image.url])
+        .then((result) => {
+            console.log(`Added image to the database`, image);
+            res.sendStatus(201);
+        })
+        .catch((err) => {
+            console.log(`Error making database query ${sqlText}`, err);
+            res.sendStatus(500); // Good server always responds
+        })
+}) // END POST Route
+
+
 module.exports = router;

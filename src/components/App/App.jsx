@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import React from 'react';
 import './App.css';
 import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList'
+import GalleryForm from '../GalleryForm/GalleryForm'
 
 function App() {
 
@@ -42,6 +43,9 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">My Gallery</h1>
       </header>
+      <GalleryForm 
+        fetchGallery={fetchGallery}
+      />
       <GalleryList
         gallery={gallery}
         addLike={addLike}
