@@ -7,13 +7,17 @@ CREATE TABLE gallery (
 INSERT INTO "gallery" 
 	("name", "url") 
 VALUES
-	('Unicorn', 'https://cdn11.bigcommerce.com/s-sjl48p9/images/stencil/100x100/products/1956/2217/plush-toy-stuffed-animal-unicorn-wholesale__39538.1527271841.jpg?c=2'),
-	('Narwhal', 'https://cdn.shopify.com/s/files/1/2284/6393/products/fao-schwarz-plush-17-narwhal-plush-stuffed-animal-toy-with-led-lights-and-sound-28341322580055_small.jpg?v=1634093838'),
-	('Dragon', 'https://target.scene7.com/is/image/Target/GUEST_01e4b6cc-4bd1-4be5-9370-3f44314778db?wid=100&hei=100&fmt=pjpeg'),
-	('Elephant', 'https://i5.walmartimages.com/asr/56ca6756-febf-4362-953b-df02a2b8a43d.3a22d4cb9eb47698b0bd75efce022fb0.jpeg?odnWidth=100&odnHeight=100&odnBg=ffffff'),
-	('Eevie', 'https://regisbox.com/wp-content/uploads/2021/03/glaceon-plush-toy-cute-pokemon-stuffed-animal-eeveelution-doll-regisbox-pokemon-gift-100x100.jpg'),
-	('Raccoon', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGIFnZ0PcQuMKcv5R4blFyjRqJnXKUQjuySA&usqp=CAU'),
-	('Kangaroo', 'https://cdn.shopify.com/s/files/1/0208/4678/products/KAR4K_100x100.jpg?v=1634238060'),
-	('Panda', 'https://img.grouponcdn.com/stores/4S8T1r7S2Mbc48dYRbSzDbRn68EJ/storesoi13570137-3600x2160/v1/sc100x100.jpg'),
-	('Dinosaur', 'https://downtownoutbound.com/wp-content/uploads/2020/12/TH-479920210916_185614-100x100.jpg'),
-	('Corgi', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG6F7plDQ2-2TDymr1hXySuRgcMIkcNM25Xg&usqp=CAU');
+	('Kangaroo', 'http://www.plushzoo.com.au/assets/webshop/cms/03/103.jpg?1498954083'),
+	('Panda', 'https://i5.walmartimages.com/asr/04ace033-17e8-4ee9-b8e8-bfbf96a9419f_1.9a98b7edf184494e29ad31887cf86989.jpeg?odnHeight=200&odnWidth=200&odnBg=ffffff'),
+	('Turtle', 'https://www.kroger.com/product/images/medium/front/0001196450586'),
+	('Stitch', 'https://cdn.shopify.com/s/files/1/2433/3849/products/disney-stitch-plush-from-lilo-and-stitch-stuffed-animal-toy-7-inches-27763675_200x200.jpg?v=1602218585'),
+	('Pig', 'https://cdn.shopify.com/s/files/1/0248/6124/5518/products/pink-ham_front-stuffed-animal-ping-pig-smile_200x200.jpg?v=1570131911'),
+	('Elephant', 'https://www.kroger.com/product/images/medium/front/0001196449497'),
+	('Bunny', 'https://i.pinimg.com/236x/92/14/61/92146159f8004a21cec7200ba4a6ba80--embroidery-supplies-mobile-baby.jpg'),
+	('Dragon', 'https://stoysnetcdn.com/tgtg/tgtg_ho21_4633/tgtg_ho21_4633.200x200.121a7.jpg'),
+	('Lemur', 'https://cdn.faire.com/fastly/3090288eb73ad083264ea450082a9a0552385209962483b5f03ef106167ed73f.jpeg?bg-color=FFFFFF&canvas=300:300&dpr=1&fit=bounds&format=jpg&height=300&width=300'),
+	('Unicorn', 'https://i5.walmartimages.com/asr/9c549694-60b5-4a0b-9fac-c526de8e0def.a86e0e7775e2f954db7dc3f6d869e876.jpeg?odnHeight=200&odnWidth=200&odnBg=ffffff'),
+	('Bluebird', 'https://www.kroger.com/product/images/medium/front/0009238918225'),
+	('Hedgehod', 'https://blog.sulky.com/wp-content/uploads/2016/02/hedgehog-eb.png'),
+	('Lion', 'https://cdn.shopify.com/s/files/1/0066/1399/1512/products/full_349a117c-62a4-41d4-a48e-651b508c25ad_200x200.jpg?v=1575397476'),
+	('Raccoon', 'https://stoysnetcdn.com/wldr/wldr10943/wldr10943.200x200.dbb1b.jpg');
