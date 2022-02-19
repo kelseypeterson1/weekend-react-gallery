@@ -2,6 +2,7 @@ CREATE TABLE gallery (
 	id SERIAL,
 	name varchar(50),
 	url varchar(500),
+    likes integer default 0
 );
 
 INSERT INTO "gallery" 

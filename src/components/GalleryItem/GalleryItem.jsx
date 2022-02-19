@@ -1,7 +1,7 @@
 import './GalleryItem.css'
-import { useEffect, useState } from 'react';
+import {useState} from 'react';
 
-function GalleryItem({ image }) {
+function GalleryItem({image, addLike}) {
 
     const [imageSelected, setImageSelected] = useState(true);
     // const { spaceRendering, setSpaceRendering } = useState("");
@@ -13,21 +13,20 @@ function GalleryItem({ image }) {
     }
 
     const handleLike = () => {
-        console.log('like button clicked')
+        console.log('like button clicked for id', image.id)
+        addLike(image);
     }
 
 
     return (
-        // <div className={'contents'}>
         <div className={'contents'}>
             <div className={'thumbnail'} onClick={handleClick}>
                 {imageSelected ? <img src={image.url} alt={image.name}></img> : <h3>{image.name}</h3>}
             </div>
             <div className={'button'}>
-            <button onClick={handleLike}>like</button>
+                <button onClick={handleLike}>like</button>
             </div>
         </div>
-        //  </div>
     )
 }
 
