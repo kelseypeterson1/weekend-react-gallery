@@ -5,10 +5,12 @@ import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList'
 import GalleryForm from '../GalleryForm/GalleryForm'
 
+
 function App() {
 
   let [gallery, setGallery] = useState([]);
 
+  // GET function pulls images from server
   const fetchGallery = () => {
     console.log('Fetching gallery')
     axios.get('/gallery')
@@ -20,6 +22,7 @@ function App() {
       })
   }
 
+  // DELETE function removes images from database
   const deleteImage = (id) => {
     console.log('Delete request made it back to app.jsx. Deleting:', id)
     axios({
@@ -34,6 +37,7 @@ function App() {
         })
 }
 
+  // PUT function adds a like to images on the server
   const addLike = (item) => {
     console.log('addLike function made it back to app.jsx with id', item.id)
     let newCount = item.likes + 1;
@@ -47,23 +51,32 @@ function App() {
   }
 
 
+  // Images are grabbed from the server when the screen is loaded
   useEffect(() => {
     fetchGallery();
   }, [])
 
+  // Renders to the DOM
   return (
+
     <div className="App">
+      {/* Header */}
       <header className="App-header">
         <h1 className="App-title">My Gallery</h1>
       </header>
+
+      {/* Input fields */}
       <GalleryForm 
         fetchGallery={fetchGallery}
       />
+
+      {/* Gallery */}
       <GalleryList
         gallery={gallery}
         addLike={addLike}
         deleteImage={deleteImage}
       />
+
     </div>
   );
 }

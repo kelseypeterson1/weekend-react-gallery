@@ -28,8 +28,8 @@ function GalleryItem({image, addLike, deleteImage}) {
                 {imageSelected ? <img src={image.url} alt={image.name}></img> : <h3>{image.name}</h3>}
             </div>
             <div className={'buttons'}>
-                <button onClick={handleLike}>Like</button>
-                <button onClick={handleDelete}>Delete</button>
+                <button variant="contained" onClick={handleLike}>Like</button>
+                <button variant="contained" onClick={handleDelete}>Delete</button>
             </div>
             {image.likes === 0 && <p>No likes yet...</p>}
             {image.likes === 1 && <p>1 person likes this</p>}
