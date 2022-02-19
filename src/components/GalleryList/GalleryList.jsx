@@ -4,6 +4,8 @@ import './GalleryList.css'
 
 function GalleryList({ gallery, addLike, deleteImage}) {
     return (
+
+        // The gallery array is looped through for each item in the GalleryItem component
         <div className={'container'}>
             {gallery.map(image =>
                 (<GalleryItem
