@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import './GalleryForm.css';
 
 function GalleryForm({fetchGallery}) {
 
@@ -33,13 +34,14 @@ function GalleryForm({fetchGallery}) {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <label>Name:</label>
                 <input
+                    placeholder="Name"
                     onChange={(event) => setNewImageName(event.target.value)}
                     value={newImageName}
                 />
-                <label>URL:</label>
                 <input
+                    className="url"
+                    placeholder="URL"
                     onChange={(event) => setNewImageUrl(event.target.value)}
                     value={newImageUrl} />
                 <button type="submit">Add New Image</button>
