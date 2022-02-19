@@ -12,13 +12,22 @@ function GalleryItem({ image }) {
         setImageSelected(!imageSelected);
     }
 
+    const handleLike = () => {
+        console.log('like button clicked')
+    }
+
 
     return (
-        <>
+        // <div className={'contents'}>
+        <div className={'contents'}>
             <div className={'thumbnail'} onClick={handleClick}>
                 {imageSelected ? <img src={image.url} alt={image.name}></img> : <h3>{image.name}</h3>}
             </div>
-        </>
+            <div className={'button'}>
+            <button onClick={handleLike}>like</button>
+            </div>
+        </div>
+        //  </div>
     )
 }
 
